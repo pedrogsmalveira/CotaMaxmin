@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-center);
+  }
+
+:root{
+    --background-center: #070C17 ;
+    --border-container: #151A28 ;
+    --border-container-divs: #333949 ;
+    --color-text-homepage: #A738E3 ;
+    --color-border-input: #b20168 ;
+    --color-white:rgb(255, 255, 255);
+    --color-red: rgb(255, 0, 0) ;
+    --color-hover-style:#8d2ec0 ;
+}

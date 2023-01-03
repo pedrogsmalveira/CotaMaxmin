@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.container_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: solid 3px var(--border-container);
+  border-radius: 10px;
+  width: 350px;
+  height: 350px;
+  color: var(--color-text-homepage);
+}
+
+.password_form,
+.usuario_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.password_form label,
+.usuario_form label {
+  margin-bottom: 5px;
+  color: var(--color-white);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 200px;
+  padding: 5px 0px 5px 16px;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-white);
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: 3px solid var(--color-border-input);
+  border-radius: 20px;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.error_login {
+  width: 200px;
+  position: fixed;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  text-align: center;
+  color: var(--color-red) !important;
+}
+
+.button_form_submit {
+  position: absolute;
+  text-align: center;
+  width: 130px;
+  padding: 06px;
+  margin-top: 25px;
+  margin-left: 35px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  background-color: var(--color-text-homepage);
+  color: var(--color-white);
+  border-radius: 4px;
+  transition: all 0.1s;
+}
+
+.button_form_submit:hover {
+  background-color: var(--color-hover-style);
+}
+
+@media (max-width: 1823px) {
+  .circle_pulse {
+    display: none;
+  }
+}

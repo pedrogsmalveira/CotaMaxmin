@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styleseachpage.css" />
+    <link rel="stylesheet" href="../css/root.css" />
+    <title>Busca de Cotas</title>
+  </head>
+  <body>
+    <section>
+      
+      <div class="container">
+        <div class="conteiner_header">
+          <form action="#">
+            <div class="form_div"><div class="img_seta" >
+        <a href="../../index.html"><img src="../img/seta-esquerda.png" alt=""></a>
+      </div>
+              <div class="escolha_campo">
+                <select class="campo_de_escolha" id="opcoesBusca">
+                  <option>Nome:</option>
+                  <option>Numero Cota:</option>
+                  <option>Cpf:</option>
+                </select>
+                <input type="text" id="numeroCota" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="busca_resultado">
+          <div id="numeroDacota"></div>
+          <div id="donoDacota"></div>
+          <div id="depenDentes"></div>
+          <div id="emaIl"></div>
+          <div id="cPf"></div>
+        </div>
+        <div class="fazer_cadastro">
+          <div class="buscar_botton">
+            <a id="buscar">Buscar</a>
+          </div>
+          <a href="./cadastrocotas.html" id="cadastro">
+            Fazer cadastro de cotas!
+          </a>
+          <a class="ver_todas_as_cotas" href="../html/fullcotas.html">Ver todas</a>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="container_header_cota" id="container_cota"></div> -->
+    <script src="../api/viewCotas.js"></script>
+    <script src="../js/valllog.js"></script>
+  </body>
+</html>

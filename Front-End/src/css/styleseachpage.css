@@ -1,0 +1,121 @@
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 500px;
+  height: 600px;
+  border-radius: 23px;
+  border: 3px solid #45537a;
+}
+
+.conteiner_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.form_div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.img_seta {
+  position: absolute;
+  right: 90%;
+  bottom: 91%;
+}
+
+.img_seta a img {
+  width: 20px;
+}
+
+select#opcoesBusca {
+  background: no-repeat var(--color-border-input);
+  width: 117px;
+  height: 31px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  padding: 0px 0px 0px 6px;
+  color: var(--color-white);
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+
+select#opcoesBusca::-ms-expand {
+  display: none;
+}
+
+input#numeroCota {
+  font-family: "Poppins", sans-serif;
+  padding: 5px;
+  border-radius: 6px;
+  border: none;
+}
+
+select#opcoesBusca,
+input#numeroCota:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+#numeroDacota,
+#donoDacota,
+#depenDentes,
+#emaIl,
+#cPf {
+  text-align: left;
+  width: 400px;
+  height: 25px;
+  margin-top: 30px;
+  padding: 10px;
+  color: var(--color-white);
+  font-family: "Poppins", sans-serif;
+  border: 2px solid var(--border-container-divs);
+  border-radius: 1px;
+}
+
+.fazer_cadastro {
+  margin-top: 40px;
+}
+
+.buscar_botton {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 9px;
+  margin-bottom: 10px;
+  border-radius: 05px;
+  background-color: var(--color-text-homepage);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+#cadastro {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 0.7rem;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.ver_todas_as_cotas {
+  text-decoration: none;
+  margin-left: 10px;
+  color: var(--color-text-homepage);
+  font-size: 0.7rem;
+  font-family: "Poppins", sans-serif;
+}
