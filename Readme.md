@@ -82,3 +82,4 @@ Senha
 
 - Criar rota de delete 
 - Criar rota para um fecth na pagina de cadastro, e criar e estilizar um alert
+- Fazer reaponsividade
