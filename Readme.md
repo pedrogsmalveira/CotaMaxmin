@@ -49,7 +49,7 @@ Inicie o servidor
 Abra seu Painel de Comando 
 
 ```bash
-cd  !!Arraste a pasta aqui!!
+cd  !!Arraste a pasta aqui a pasta!!
 ```
 
 Abra a pasta Front-End
