@@ -22,7 +22,7 @@ Nesse pojeto apreendi muitas coisas no Javascript, boas praticas novos elementos
 Clone o projeto 📲
 
 ```bash
-  git clone https://link-para-o-projeto
+  git clone https://github.com/pedrogsmalveira/CotaMaxmin
 ```
 
 Entre no diretório do projeto
