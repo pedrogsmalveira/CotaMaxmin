@@ -16,6 +16,17 @@ Nesse pojeto apreendi muitas coisas no Javascript, boas praticas novos elementos
 - [@Bryan-ro](https://www.github.com/Bryan-ro)
 - [@pedrogsmalveira](https://www.github.com/pedrogsmalveira)
 
+## Criar um Banco de Dados
+
+```bash
+  https://www.mongodb.com/cloud/atlas/register
+``` 
+```bash
+import mongoose from 'mongoose';
+mongoose.connect('mongodb+srv://AQUICOLOCARUSUARIO:SENHA@cluster0.tw48ipa.mongodb.net/NOMEDOBD');
+
+export default mongoose.connection;
+``` 
 
 ## Rodando localmente Back-End
 
