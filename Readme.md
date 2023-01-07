@@ -1,4 +1,3 @@
-
 # Criador e Visualizador de cotas 
 
 Um projeto de teste, Front-End feito por mim e Back-End feito pelo Byan.
@@ -16,6 +15,16 @@ Nesse pojeto apreendi muitas coisas no Javascript, boas praticas novos elementos
 - [@Bryan-ro](https://www.github.com/Bryan-ro)
 - [@pedrogsmalveira](https://www.github.com/pedrogsmalveira)
 
+## Criar um Banco de Dados
+
+```bash
+  https://www.mongodb.com/cloud/atlas/register
+``` 
+```bash
+import mongoose from 'mongoose';
+mongoose.connect('mongodb+srv://AQUICOLOCARUSUARIO:SENHA@cluster0.tw48ipa.mongodb.net/NOMEDOBD');
+export default mongoose.connection;
+``` 
 
 ## Rodando localmente Back-End
 
@@ -79,7 +88,5 @@ Senha
 ```
 
 ## Melhorias 🐱‍🏍
-
-- Criar rota de delete 
-- Criar rota para um fecth na pagina de cadastro, e criar e estilizar um alert
-- Fazer reaponsividade
+- Criar opção de editar cota.
+- Fazer reaponsividade.

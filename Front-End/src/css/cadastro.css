@@ -72,3 +72,20 @@ input:focus {
     border-radius: 4px;
     transition: all 0.1s;
 }
+
+/* 
+==============================
+Personalização do alert
+==============================
+*/
+
+.swal-modal {
+  border: 1px solid var(--border-container-divs);
+
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.swal-button {
+  background-color: var(--color-text-homepage);
+}

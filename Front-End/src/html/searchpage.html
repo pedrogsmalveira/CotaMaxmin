@@ -23,7 +23,7 @@
                   <option>Numero Cota:</option>
                   <option>Cpf:</option>
                 </select>
-                <input type="text" id="numeroCota" />
+                <input type="search" id="numeroCota" placeh older="Pesquisar" />
               </div>
             </div>
           </form>
@@ -35,20 +35,21 @@
           <div id="emaIl"></div>
           <div id="cPf"></div>
         </div>
-        <div class="fazer_cadastro">
-          <div class="buscar_botton">
-            <a id="buscar">Buscar</a>
-          </div>
-          <a href="./cadastrocotas.html" id="cadastro">
-            Fazer cadastro de cotas!
-          </a>
+        <div>
+          <button id="buscar">Buscar</button>
+          <button id="delete"><a>Deletar cota</a></button>
+        </div>
+        
+        <div class="fazer_cadastro">  
+          <a href="./cadastrocotas.html" id="cadastro">Fazer cadastro de cotas!</a>
+          
           <a class="ver_todas_as_cotas" href="../html/fullcotas.html">Ver todas</a>
         </div>
         </div>
       </div>
     </section>
-    <!-- <div class="container_header_cota" id="container_cota"></div> -->
-    <script src="../api/viewCotas.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../api/viewOneCotas.js"></script>
     <script src="../js/valllog.js"></script>
   </body>
 </html>

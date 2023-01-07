@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/cadastro.css">
-    <link rel="stylesheet" href="../css/root.css">
-    <title>Cadadtro de cotas MxClube</title>
-  </head>
-  <body>
-      <section>
-       
-        <form action="http://localhost:5501/cotas" method="post" id="formCadastro"> 
-          <div class="img_seta">
-          <a href="../html/searchpage.html"><img src="../img/seta-esquerda.png" alt=""></a>
-        </div>
-            <label for="dono-da-cota">Dono da Cota:</label>
-            <br>
-            <input type="text" name="donodacota" id="dono-da-cota" required/>
-            <br>
-            <label for="dependentes">Dependentes:</label>
-            <br>
-            <input type="text" name="dependentes" id="dependentes"  required/>
-            <br>
-            <label for="cpf">Cpf do Dono:</label>
-            <br>
-            <input type="text" name="cpf" id="cpf" min="11" max="11" required/> 
-            <br>
-            <label for="email">Email:</label>
-            <br>
-            <input type="text" name="email" id="email" required/>
-            <br>
-            <button type="submit" id="buttonCadastro">Cadastrar</button>
-          </div>
-        </form>
-      </section>
-      <script src="../api/cadastrocotas.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/cadastro.css">
+  <link rel="stylesheet" href="../css/root.css">
+  <title>Cadadtro de cotas MxClube</title>
+</head>
+
+<body>
+  <section>
+
+    <form id="formCadastro" onsubmit="cadastrar()">
+      <div class="img_seta">
+        <a href="../html/searchpage.html"><img src="../img/seta-esquerda.png" alt=""></a>
+      </div>
+      <label for="dono-da-cota">Dono da Cota:</label>
+      <br>
+      <input type="text" id="dono-da-cota" required />
+      <br>
+      <label for="dependentes">Dependentes:</label>
+      <br>
+      <input type="text" id="dependentes" required />
+      <br>
+      <label for="cpf">Cpf do Dono:</label>
+      <br>
+      <input type="text" id="cpf" min="11" max="11" required />
+      <br>
+      <label for="email">Email:</label>
+      <br>
+      <input type="email" id="email" required />
+      <br>
+      <button type="submit" id="buttonCadastro">Cadastrar</button>
+    </form>
+  </section>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="../api/cadastrarCota.js"></script>
+</body>
+
 </html>

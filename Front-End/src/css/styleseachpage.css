@@ -89,18 +89,24 @@ input#numeroCota:focus {
   border-radius: 1px;
 }
 
-.fazer_cadastro {
-  margin-top: 40px;
-}
-
-.buscar_botton {
-  text-align: center;
+#buscar {
+  margin-top: 20px;
   font-family: "Poppins", sans-serif;
-  padding: 9px;
+  padding: 9px 100px;
   margin-bottom: 10px;
   border-radius: 05px;
   background-color: var(--color-text-homepage);
   color: var(--color-white);
+  cursor: pointer;
+}
+
+#delete {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  padding: 9px 5px;
+  margin-bottom: 10px;
+  border-radius: 05px;
+  background-color: red; 
   cursor: pointer;
 }
 
@@ -118,4 +124,27 @@ input#numeroCota:focus {
   color: var(--color-text-homepage);
   font-size: 0.7rem;
   font-family: "Poppins", sans-serif;
+}
+
+
+/* 
+==============================
+Personalização do alert
+==============================
+*/
+
+.swal-modal {
+  border: 1px solid var(--border-container-divs);
+
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.swal-button {
+  background-color: var(--color-text-homepage);
+  color: white;
+}
+
+.swall-text {
+  color: white;
 }

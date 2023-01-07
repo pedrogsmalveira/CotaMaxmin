@@ -1,5 +1,6 @@
 import express from "express";
 import { cadastrarCota, verCotas, verCotaPorNome, verCotaporNumero, verCotaporCpf, deletarCota } from "../controllers/cotascontrolers.js";
+import { validateCpf } from "../middleware/cotasValidation.js";
 
 const router = express.Router();
 
@@ -8,7 +9,7 @@ router
     .post("/cotas/nome", verCotaPorNome)
     .post("/cotas/numero", verCotaporNumero)
     .post("/cotas/cpf", verCotaporCpf)
-    .post("/cotas", cadastrarCota)
+    .post("/cotas", validateCpf, cadastrarCota)
     .delete("/cotas/:id", deletarCota)
 
 

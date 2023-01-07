@@ -52,11 +52,11 @@ const cadastrarCota = async (req, res) => {
   const { donodacota, dependentes, cpf, email } = req.body;
 
   const cota = new Cotas({
-    donodacota,
+    "donodacota": donodacota.toUpperCase(),
     "numerodacota": await autoIncrement(),
-    dependentes,
+    "dependentes": dependentes.toUpperCase(),
     cpf,
-    email
+    "email": email.toLowerCase()
   });
 
    cota.save((err) => {
@@ -64,7 +64,7 @@ const cadastrarCota = async (req, res) => {
             return res.status(400).json({message: err});
         };
 
-        return res.status(201).render(`form`);
+        return res.status(201).json({message: "Cadastrado com sucesso"});
    });
 
 };
