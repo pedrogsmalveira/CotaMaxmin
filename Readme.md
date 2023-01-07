@@ -23,6 +23,7 @@ Nesse pojeto apreendi muitas coisas no Javascript, boas praticas novos elementos
 ```bash
 import mongoose from 'mongoose';
 mongoose.connect('mongodb+srv://AQUICOLOCARUSUARIO:SENHA@cluster0.tw48ipa.mongodb.net/NOMEDOBD');
+
 export default mongoose.connection;
 ``` 
 
