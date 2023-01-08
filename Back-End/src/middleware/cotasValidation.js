@@ -1,7 +1,6 @@
-import { response } from "express";
 import Cotas from "../models/Cotas.js"
 
-const validateCpf = async (req, res, next) => {
+const validateCpfForCreate = async (req, res, next) => {
     const { cpf } = req.body;
     
     await Cotas.find({ cpf })
@@ -14,14 +13,32 @@ const validateCpf = async (req, res, next) => {
             if(cpf.length !== 11) {
                 return res.json({message: "CPF invalido"})
             }
-            return next()
-        }
-            
+            return next();
+        };  
     });
+};
 
+const validateCpfForEdit = async (req, res, next) => {
+    const { id, cpf } = req.body;
     
+    await Cotas.find({ cpf })
+    .then(response => {
+        try {
+            if(cpf == response[0].cpf && id != response[0]._id) {
+                return res.json({message: "CPF repetido"});
+            } else {
+                return next()
+            }
+        } catch {
+            if(cpf.length !== 11) {
+                return res.json({message: "CPF invalido"})
+            }
+            return next();
+        };  
+    });
 };
 
 export {
-    validateCpf
+    validateCpfForCreate,
+    validateCpfForEdit
 }

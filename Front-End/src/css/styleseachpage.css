@@ -1,3 +1,8 @@
+* {
+  text-decoration: none;
+  color: black;
+}
+
 section {
   display: flex;
   justify-content: center;
@@ -107,6 +112,16 @@ input#numeroCota:focus {
   margin-bottom: 10px;
   border-radius: 05px;
   background-color: red; 
+  cursor: pointer;
+}
+
+#edit {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  padding: 9px 5px;
+  margin-bottom: 10px;
+  border-radius: 05px;
+  background-color: rgb(247, 228, 255); 
   cursor: pointer;
 }
 

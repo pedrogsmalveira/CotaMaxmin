@@ -20,18 +20,18 @@ async function cadastrar() {
             return await response.json();
         })
         .then((response) => {
-            if(response.message === "CPF repetido") {
-                swal({
+            if(response.message == 'CPF repetido') {
+                return swal({
                     text: "CPF já cadastrado anteriormente.",
                     icon: "error",
                 });
             } if(response.message === "CPF invalido") {
-                swal({
+                return swal({
                     text: "O CPF digitado é invalido, pois possui numeros a mais ou a menos.",
                     icon: "error",
                 });
             } else {
-                swal({
+                return swal({
                     text: "Cota cadastrada com sucesso",
                     icon: "success",
                 });

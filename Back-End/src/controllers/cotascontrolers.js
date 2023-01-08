@@ -1,7 +1,6 @@
 import Cotas from '../models/Cotas.js';
 import autoIncrement from "../func/autoIncrement.js"
-
-
+  
 const verCotas = (req, res) => {
     Cotas.find((err, cotas) => {
         if(err) {
@@ -69,6 +68,22 @@ const cadastrarCota = async (req, res) => {
 
 };
 
+const editarCota = (req, res) => {
+  const id = req.params.id;
+  const { donodacota, dependentes, cpf, email } = req.body;
+  
+  Cotas.findByIdAndUpdate(id, {
+    "donodacota": donodacota.toUpperCase(),
+    "dependentes": dependentes.toUpperCase(),
+    "cpf": cpf.toUpperCase(),
+    "email": email.toLowerCase()
+  }, (err) => {
+    if(err) {
+      return res.json({message: err});
+    };
+    return res.json({message: "Atualizado"});
+  });
+};
 
 const deletarCota = (req, res) => {
   const id = req.params.id;
@@ -82,12 +97,12 @@ const deletarCota = (req, res) => {
   });
 };
 
-
 export {
     cadastrarCota,
     verCotas,
     verCotaPorNome,
     verCotaporNumero,
     verCotaporCpf,
-    deletarCota
+    deletarCota,
+    editarCota
 };
